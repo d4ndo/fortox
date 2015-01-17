@@ -27,7 +27,7 @@ Start the bot:
 
 ```bash
 cd fortox
-ratox && 
+ratox &bg
 echo 1 > ./request/out/TOXID
 ./fortox.sh TOXID
 ```
