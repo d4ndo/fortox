@@ -27,7 +27,7 @@ Start the bot:
 
 ```bash
 cd fortox
-ratox &bg
+ratox myprofile &bg
 echo 1 > ./request/out/TOXID
 ./fortox.sh TOXID
 ```
@@ -37,3 +37,16 @@ connect to the bot by any TOX client and write "fortune".
 #returns TOXID from fortox bot
 cat id
 ```
+
+#Watchdog
+
+A watchdog to check if ratox is still alive.
+
+```bash
+# Add the following line in /etc/crontab
+0 *   * * *   root    cd /home/myname/fortox && ./checkalive.sh myprofile
+
+# Or start manual
+./checkalive.sh myprofile
+```
+
