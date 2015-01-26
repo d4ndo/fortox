@@ -10,5 +10,5 @@ while true; do
 		fortune > "$1/text_in";
 	fi
 done
- 
+
 exit 0;
