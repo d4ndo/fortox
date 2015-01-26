@@ -7,7 +7,7 @@ myprofile="$1";
 
 if pgrep ratox; then
 	echo "ratox OK";
-else 
+else
 	echo "restarting ratox";
 	ratox "$myprofile" &bg;
 fi
