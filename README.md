@@ -31,7 +31,7 @@ ratox myprofile &bg
 echo 1 > ./request/out/TOXID
 ./fortox.sh TOXID
 ```
-connect to the bot by any TOX client and write "fortune".
+connect to the bot by any TOX client and type `!fortune` or `!f`.
 
 ```bash
 #returns TOXID from fortox bot
