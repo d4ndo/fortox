@@ -1,7 +1,7 @@
 #!/bin/bash
 
-regd="(^\s*![Dd]ice|![dD])";
-arg="(([0-9]{1}x)*[0-9]{1,2}[dD]{1}[0-9]{1,3})";
+regd="(^\s*![Rr]oll|![Rr])";
+arg="(([0-9]{1}x)*[0-9]{0,2}d{1}[0-9]{1,3}|\%)";
 
 while true; do
 	inotifywait "$1/text_out";
