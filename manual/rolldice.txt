@@ -1,0 +1,32 @@
+NAME
+!roll or !r - rolls virtual dice
+
+SYNOPSIS
+!roll dice_string 
+	
+DICE STRING FORMAT
+The dice string uses the following format:
+{#x}{#}d[#|%]
+
+{#}d[#|%]
+This  is  the  only  required part of the string, and now
+really isn't even required, as it defaults to 1d6 if  not
+found.   The  first number is the number of dice to roll,
+and the second number is the number  of  sides  the  dice
+have.   The  numbers rolled on each die are then added up
+and given as the result.  Hence  3d6  means  "roll  three
+six-sided dice, add them together and return the result".
+If the first number is left out, then the number of  dice
+defaults to 1.  If the second number is not a number, but
+a percentage sign, then the number of sides  becomes  100
+(for a percentage roll).
+
+{#x}
+This  number  tells how many times to roll.  For example,
+if you want to roll 3 6-sided dice 6 times, you would say
+6x3d6.   This  would return six numbers, corresponding to
+the six different rolls.
+
+EXAMPLE
+!roll 1d6
+fortune: Roll #1: (6 ) = 6

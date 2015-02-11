@@ -1,0 +1,5 @@
+NAME
+!fortune or !f - print a random, hopefully interesting, adage
+
+SYNOPSIS
+!fortune 
