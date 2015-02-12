@@ -1,6 +1,6 @@
 #!/bin/bash
 
-regd="(^\s*![Rr]oll\s*$|^\s*![Rr]\s*$)";
+regd="(^\s*![Rr]oll|^\s*![Rr])";
 arg="(([0-9]{1}x)*[0-9]{0,2}d{1}[0-9]{1,3}|\%)";
 
 while true; do
