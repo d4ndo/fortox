@@ -28,8 +28,6 @@ Start the bot:
 ```bash
 cd fortox
 ./start.sh TOXID
-
-echo 1 > ./request/out/TOXID
 ```
 connect to the bot by any TOX client and type `!fortune` or `!f`.
 
