@@ -18,7 +18,7 @@ How to install ratox: https://wiki.tox.im/Ratox
 After installing ratox clone the repository:
 
 ```bash
-sudo apt-get install fortune-mod inotify-tools
+sudo apt-get install fortune-mod rolldice inotify-tools
 git clone https://github.com/d4ndo/fortox.git
 ```
 #Usage:
@@ -27,13 +27,16 @@ Start the bot:
 
 ```bash
 cd fortox
-ratox myprofile &bg
+./start.sh TOXID
+
 echo 1 > ./request/out/TOXID
-./fortox.sh TOXID
 ```
 connect to the bot by any TOX client and type `!fortune` or `!f`.
 
 ```bash
+#allow request
+echo 1 > ./request/out/TOXID
+
 #returns TOXID from fortox bot
 cat id
 ```
