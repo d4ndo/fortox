@@ -27,9 +27,21 @@ Start the bot:
 
 ```bash
 cd fortox
+
+# start ratox client first
+ratox fortox
+# start bash script
 ./start.sh TOXID
 ```
 connect to the bot by any TOX client and type `!fortune` or `!f`.
+
+Howto add fortox bot to your friendlist:
+
+```bash
+echo TOXID > ./request/in
+```
+
+Some other useful commands:
 
 ```bash
 #allow request
@@ -37,6 +49,9 @@ echo 1 > ./request/out/TOXID
 
 #returns TOXID from fortox bot
 cat id
+
+#change nickname to "fortune"
+echo fortune > ./name/in
 ```
 
 #Watchdog
