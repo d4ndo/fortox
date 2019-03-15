@@ -13,7 +13,7 @@ fortox requires:
 * and bash.
 
 ratox is a client implementation of the tox protocol. It allows complete interaction through named pipes.
-How to install ratox: http://git.z3bra.org/ratox/file/README.html
+How to install ratox: https://git.2f30.org/ratox/log.html
 
 After installing ratox clone the repository:
 
